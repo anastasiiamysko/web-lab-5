@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mysko Anastasiia - Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    
+    <header class="card page-header" style="display: flex; justify-content: space-between; align-items: center;">
+      <div>
+        <h1>Mysko Anastasiia CV</h1>
+        <h2 style="color: #2563eb;">Frontend Developer</h2>
+      </div>
+      <!-- Кнопка перемикання теми -->
+      <button id="themeToggle" class="theme-btn">Змінити тему</button>
+    </header>
+
+   
+    <section class="card" data-section="skills">
+      <h3>Skills:</h3>
+      <div class="skills-list">
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Tailwind CSS</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">GitHub</span>
+        <span class="skill-tag">Vite</span>
+        <span class="skill-tag">REST API</span>
+        <span class="skill-tag">Responsive Design</span>
+      </div>
+    </section>
+
+    
+    <section class="card" data-section="education">
+      <h3>Education:</h3>
+      <div class="education-item">
+        <div>
+          <h4>Cybersecurity</h4>
+          <p class="subtitle">Lviv Polytechnic National University</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="card" data-section="projects">
+      <h3>Projects:</h3>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h4 style="color: #16a34a;">CV Resume App</h4>
+          <p>Interactive single-page resume application built with React, Vite, and Tailwind CSS for displaying portfolio and skills.</p>
+        </article>
+
+        <article class="project-card">
+          <h4 style="color: #16a34a;">Adaptive Web Pages</h4>
+          <p>Collection of responsive web pages created with HTML5, modern CSS Grid/Flexbox layouts, and custom animations.</p>
+        </article>
+
+        <article class="project-card">
+          <h4 style="color: #16a34a;">Frontend Lab Projects</h4>
+          <p>Educational web development projects focusing on UI components, state management, and modern styling practices.</p>
+        </article>
+      </div>
+    </section>
+
+    
+    <section class="card" data-section="reviews">
+      <h3>Відгуки попередніх роботодавців:</h3>
+      <div id="reviews-container">Завантаження коментарів...</div>
+    </section>
+
+    
+    <footer class="card">
+      <p>© 2026 Mysko Anastasiia</p>
+      <p id="system-info" style="font-size: 0.85rem; opacity: 0.8;"></p>
+    </footer>
+  </div>
+
+  <div id="contactModal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal" class="close-btn">&times;</span>
+      <h3>Зворотний зв'язок</h3>
+      
+      <form action="https://formspree.io/f/xgakplge" method="POST">
+        <input type="text" name="name" placeholder="Ім'я" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Номер телефону" required />
+        <textarea name="message" placeholder="Повідомлення у довільній формі" rows="4" required></textarea>
+        <button type="submit">Надіслати</button>
+      </form>
+    </div>
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
